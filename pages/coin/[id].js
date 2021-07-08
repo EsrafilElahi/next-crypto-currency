@@ -3,7 +3,6 @@ import Layout from './../../components/Layout';
 
 
 function CoinDetail({ data }) {
-    console.log(data)
     return (
         <Layout>
             <div className={styles.coin_page}>
@@ -11,8 +10,7 @@ function CoinDetail({ data }) {
                     <img
                         src={data.image.large}
                         alt={data.name}
-                        className={styles.coin_image}
-                    />
+                        className={styles.coin_image} />
                     <h1 className={styles.coin_name}>{data.name}</h1>
                     <p className={styles.coin_ticker}>{data.symbol}</p>
                     <p className={styles.coin_current}>
@@ -20,7 +18,7 @@ function CoinDetail({ data }) {
                     </p>
                 </div>
             </div>
-        </Layout>
+        </Layout >
     )
 }
 

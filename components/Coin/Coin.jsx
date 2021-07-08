@@ -1,18 +1,17 @@
-import Link from 'next/link';
+import Link from 'next/link'
 import styles from './Coin.module.css'
 
 
 function Coin(props) {
 
-    const { id, name, price, symbol, marketcap, volume, image, priceChange } = props
-
+    const { id, name, price, symbol, image, volume, priceChange } = props
     return (
         <Link href={`/coin/${id}`}>
             <a>
                 <div className={styles.coin_container}>
                     <div className={styles.coin_row}>
                         <div className={styles.coin}>
-                            <img src={image} alt={name} className={styles.coin_img} />
+                            <img src={`${image}`} alt={name} className={styles.coin_img} />
                             <h1 className={styles.coin_h1}>{name}</h1>
                             <p className={styles.coin_symbol}>{symbol}</p>
                         </div>
@@ -39,3 +38,5 @@ function Coin(props) {
 }
 
 export default Coin
+
+// <Image layout='fill' src={image} alt={name} className={styles.coin_img} />
