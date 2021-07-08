@@ -1,0 +1,33 @@
+.search_container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.search_container input {
+  width: 300px;
+}
+
+.coin_input {
+  background: #222531;
+  border: none;
+  padding: 16px;
+  border-radius: 4px;
+  outline: none;
+  height: 100%;
+  width: 100%;
+  color: #e2e2e2;
+  font-size: 16px;
+}
+
+.coin_input::placeholder {
+  color: #b8b5b5;
+  font-size: 13px;
+}
+
+/* Media Query */
+@media only screen and (max-width: 480px) {
+  .search_container {
+    margin-left: 8rem;
+  }
+}
