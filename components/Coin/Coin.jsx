@@ -5,6 +5,7 @@ import styles from './Coin.module.css'
 function Coin(props) {
 
     const { id, name, price, symbol, image, volume, priceChange } = props
+    
     return (
         <Link href={`/coin/${id}`}>
             <a>
