@@ -40,4 +40,3 @@ function Coin(props) {
 
 export default Coin
 
-// <Image layout='fill' src={image} alt={name} className={styles.coin_img} />
