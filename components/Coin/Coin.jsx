@@ -5,7 +5,7 @@ import styles from './Coin.module.css'
 function Coin(props) {
 
     const { id, name, price, symbol, image, volume, priceChange } = props
-    
+
     return (
         <Link href={`/coin/${id}`}>
             <a>
@@ -26,10 +26,10 @@ function Coin(props) {
                                     {priceChange.toFixed(2)}%
                                 </p>
                             ) : (
-                                    <p className={(styles.coin_percent, styles.green)}>
-                                        {priceChange.toFixed(2)}%
-                                    </p>
-                                )}
+                                <p className={(styles.coin_percent, styles.green)}>
+                                    {priceChange.toFixed(2)}%
+                                </p>
+                            )}
                         </div>
                     </div>
                 </div>
